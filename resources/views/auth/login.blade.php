@@ -14,7 +14,6 @@
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/customize.css" rel="stylesheet">
 
 </head>
 
@@ -32,14 +31,9 @@
                 <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
             </p>
             <p>Login in. To see it in action.</p>
-            <form method="post" class="m-t" role="form" action="{{route('auth.dologin')}}">
-                @csrf
+            <form class="m-t" role="form" action="index.html">
                 <div class="form-group">
-                    <input type="text" name="email" class="form-control" placeholder="Username" required="">
-                    @if ($errors->has('email'))
-                    <span class="error-message">{{
-                        $errors-> first('email')}}</span>
-                        @endif
+                    <input type="email" class="form-control" placeholder="Username" required="">
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" placeholder="Password" required="">
